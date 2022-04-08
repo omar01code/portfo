@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Titillium+Web:ital,wght@0,400;0,600;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*header style start*/
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, #A1FFCE,#FAFFD1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    height: 20vh;
+    width: 90%;
+    background-color: aliceblue;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px gray inset;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1xp solid black;
+    outline: none;
+    margin: 2vh 20px;
+}
+header nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    width: 100px;
+    height: 40px;
+    margin: 0 30px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgb(193, 229, 243); 
+    cursor: pointer;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-weight: 500;
+    text-shadow: 0 0 5px rgb(168, 165, 165);
+}
+nav ul li:hover{
+    background-color: white;
+    transform: translateY(-10px);
+    
+}
+nav ul li.active{
+    background-color: white;
+}
+/*header style end*/
+
+
+/* home style start*/
+
+.title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1 {
+    font-size: 90px;
+    font-family: roboto;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(6, 170, 247), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title span {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 22px;
+
+}
+.title i {
+    position: absolute;
+    font-size: 80px;
+    top: 39%;
+    right: 15%;
+    color: rgb(255, 0, 0);
+}
+.title p {
+    font-size: 20px;
+    color: rgb(134, 131, 131);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    word-spacing: 3px;
+}
+
+/* home style end*/
+/* compétance starts*/
+
+.competance {
+    height: 100vh;
+    width: 100%;
+    background-color: #A1FFCE;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.competance .html {
+    width: 300px;
+    height: 15vh;
+    background: linear-gradient(to top, #ccc, #aaa);
+    margin: 0 20px;
+    position: relative;
+}
+.competance .html h1 {
+    text-align: center;
+    color: #bd0202;
+    font-family: roboto;
+    font-weight: 500;
+}
+.competance .html p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+     margin-bottom: 20px;
+
+}
+.competance .html .pourcentage1, .pourcentage2, .pourcentage3, .pourcentage4 {
+    width: 220px;
+    height: 8px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 2rem;
+    position: relative;
+    margin-left: 30px;
+}
+
+.competance .html .pourcentage1 span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 95%;
+    height: 8px;
+    background-color: orange;
+}
+.competance .html .pourcentage2 span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 20%;
+    height: 8px;
+    background-color: orange;
+}
+.competance .html .pourcentage3 span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 8px;
+    background-color: orange;
+}
+.competance .html .pourcentage4 span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 8px;
+    background-color: orange;
+}
+.competance .titl {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: rgb(17, 24, 27);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.competance .titl::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: orange;
+    margin-top: 45px;
+}
+.competance .hard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+}
+.competance .hard .html {
+    width: 300px;
+    margin: 0 20px;
+}
+.competance h2 {
+    position: absolute;
+    top: 26%;
+    left: 35%;
+    font-size: 40px;
+}
+.competance .html h6 {
+   position: absolute;
+   right: 15px;
+   bottom: 5px;
+   color: white;
+   font-size: 14px;
+}
+/* compétance ends*/
+/* Services Starts*/
+
+.services {
+    width: 100%;
+    height: 100vh;
+    background-color: #A1FFCE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.services .all {
+   display: flex;
+   flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+
+}
+.services .all .srv1{
+    margin: 10px 0;
+    height: 65px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.offre h1 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: rgb(17, 24, 27);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.offre h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #552eff;
+    margin-top: 45px;
+}
+.services .all .srv1 h1 {
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px rgb(90, 89, 89);
+}
+.services .all .srv1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 12px;
+    height: 390px;
+    background-color: #552eff;
+    margin: 10px -30px 0;
+}
+
+/* Services End*/
+/* contact starts */
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom,#A1FFCE,#FAFFD1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contact .box {
+    width: 40%;
+    height: 75%;
+    background-color: rgb(229, 240, 243);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 1rem;
+    position: relative;
+}
+.box i {
+    font-size: 80px;
+    margin: 15px auto;
+    color: rgb(2, 36, 99);
+}
+.contact h1 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: rgb(17, 24, 27);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.contact h1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgb(2, 36, 99);
+    margin-top: 45px;
+}
+.contact .box form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50%;
+}
+.contact .box input {
+    width: 250px;
+    margin: 20px 0 0 0;
+    background: none;
+    box-shadow: 0 0 5px inset rgb(0, 0, 0);
+    padding: 6px 10px;
+    outline: none;
+    border-radius: .5rem;
+    border: 1px solid rgb(100, 100, 100);
+}
+.box .text {
+    height: 100px;
+}
+.contact button{
+    width: 100px;
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+    background: rgb(2, 36, 99);
+    box-shadow: 0 0 5px inset rgb(0, 0, 0);
+    padding: 6px 10px;
+    outline: none;
+    border-radius: .5rem;
+    border: 1px solid rgb(100, 100, 100);
+    box-shadow: 0 0 5px inset rgb(255, 255, 255);
+    padding: 6px 10px;
+    outline: none;
+    border-radius: .5rem;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    color: white;
+}
+
+
+/* contact ends */
+
+/*footer starts*/
+
+.footer{
+    width: 100%;
+    height: 20vh;
+    background: white;
+    position: relative;
+}
+.footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.footer ul li {
+    width: 100px;
+    height: 40px;
+    margin: 0 30px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgb(193, 229, 243); 
+    cursor: pointer;
+}
+.footer ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-weight: 500;
+    text-shadow: 0 0 5px rgb(168, 165, 165);
+}
+/*footer ends*/
+
+footer {
+    background-color: #000;
+    width: 100vw;
+    height: auto;
+    font-family: Roboto;
+    padding: 40px;
+    color: white;
+}
+.end-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
